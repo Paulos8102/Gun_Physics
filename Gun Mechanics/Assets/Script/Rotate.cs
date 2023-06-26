@@ -8,11 +8,6 @@ using UnityEngine;
 public class Rotate : MonoBehaviour
 {
     [SerializeField] private float speed = 50.0f; 
-  
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
