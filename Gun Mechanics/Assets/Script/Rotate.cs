@@ -1,3 +1,6 @@
+// Paulos81 - Gun Mehanics Assignmment
+// Rotation of cubes
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
