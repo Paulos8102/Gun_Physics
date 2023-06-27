@@ -7,6 +7,7 @@ public class GunMechanism : MonoBehaviour
 
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
+    public float fireRate = 1f;
 
     [SerializeField] public float bulletSpeed = 10.0f;
 
@@ -14,10 +15,13 @@ public class GunMechanism : MonoBehaviour
 
     private bool isFiring = false;
 
+    private float nextTimeToFire = 0f;
+
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isFiring)
+        if ( Input.GetKeyDown(KeyCode.Space) && !isFiring && Time.time  >= nextTimeToFire )
         {
+            nextTimeToFire = Time.time + 1f / fireRate;
             StartCoroutine(FireBullet());
         }
     }
