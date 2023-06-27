@@ -23,4 +23,8 @@ public class Box : MonoBehaviour
         }
     }
 
+    private void DestroyBox()
+    {
+        Destroy(gameObject);
+    }
 }
