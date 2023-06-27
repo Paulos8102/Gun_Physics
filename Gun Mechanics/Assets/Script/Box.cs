@@ -10,14 +10,14 @@ public class Box : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Touched 5");
+        //Debug.Log("Touched 5");
         currentHealth = maxHealth;  // Initialize current health to maximum health
     }
 
     public void TakeDamage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        Debug.Log("Touched 6 , currentHealth " + currentHealth);
+        //Debug.Log("Touched 6 , currentHealth " + currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -27,11 +27,8 @@ public class Box : MonoBehaviour
 
     public void DestroyBox()
     {
-        Debug.Log("Touched 7");
-       // void OnCollisionEnter(Collision collision)
-        //{
-       //     Destroy(collision.gameObject);
-            Destroy(gameObject);
-        //}
+        //Debug.Log("Touched 7");
+
+        Destroy(gameObject);
     }
 }
