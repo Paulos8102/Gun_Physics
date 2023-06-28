@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Box : MonoBehaviour
 {
     [SerializeField] public float maxHealth = 100f;
     private float currentHealth;
+
+    public Slider healthBar;
+
+    public void Update()
+    {
+        healthBar.value = currentHealth;
+    }
 
 
     private void Start()
