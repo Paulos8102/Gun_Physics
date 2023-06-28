@@ -1,3 +1,6 @@
+//PaulJabez_GunMechanism
+//Quit Game Mechanism
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

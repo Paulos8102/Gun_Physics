@@ -1,3 +1,6 @@
+//PaulJabez_GunMechanism
+//The working of the Gun Object
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
