@@ -35,6 +35,7 @@ public class Box : MonoBehaviour
 
     public void DestroyBox()
     {
+
         Debug.Log("Touched 7");
 
         Destroy(gameObject);
